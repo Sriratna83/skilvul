@@ -1,0 +1,16 @@
+Start
+STORE "N" with any value
+STORE "TypeTemp" with any value
+
+IF "TypeTemp" is "fahrenheit" THEN
+    DISPLAY (CALCULATE (N - 32) * (5/9))
+
+ELSE IF "TypeTemp" is "kelvin" THEN
+    DISPLAY (CALCULATE (N - 32) * (5/9)(N - 273.15))
+    
+ELSE IF "TypeTemp" is "celcius" THEN
+    DISPLAY(SET N = N)
+ELSE
+   DISPLAY "errol"
+END IF
+END

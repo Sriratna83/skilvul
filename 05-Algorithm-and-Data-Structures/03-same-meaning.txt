@@ -1,0 +1,44 @@
+START
+
+STORE "str" with STRING value
+
+SET len = 0
+SET flag = 0
+
+WHILE str[len] not equal to null  DO
+     INCREMENT len ++
+     I = 0
+     J = len -1
+END WHILE
+
+WHILE I less than (len/2)+1 DO
+     IF str[I] equal to str[J]
+        flag = 1 
+     ELSE  
+        flag = 0 THAN
+        INCREMENT I 
+        DECREMENT J
+     END IF
+END WHILE
+
+IF flag equal to null 0
+   DISPLAY "true"
+ELSE 
+   DISPLAY "false
+END IF
+
+
+
+
+ 
+  
+        
+        
+     
+
+
+
+
+
+
+     

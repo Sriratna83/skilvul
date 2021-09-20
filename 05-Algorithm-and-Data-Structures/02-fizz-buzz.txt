@@ -1,0 +1,20 @@
+START
+
+STORE "n" with any value
+
+SET i = 1 
+ 
+FOR i Less than or equal to n DO
+    IF "n" MOD 3 = 0 AND "n" MOD 5 = 0 THEN
+        DISPLAY "FizzBuzz"
+    ELSE IF "n" MOD 3 = 0 THEN
+        DISPLAY "Fizz"
+    ELSE IF "n" MOD 3 = 0 THEN
+        DISPLAY "Buzz"
+    ELSE 
+        DISPLAY i
+    END IF
+END FOR
+
+END
+

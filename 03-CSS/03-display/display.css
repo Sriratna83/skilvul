@@ -1,0 +1,16 @@
+nav{
+    background-color: lightskyblue;
+    display: flex;
+    
+}
+nav a{
+    color:black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+a:hover{
+    background-color:gainsboro;
+}

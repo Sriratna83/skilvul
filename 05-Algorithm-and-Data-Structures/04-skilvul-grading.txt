@@ -1,0 +1,28 @@
+START
+
+STORE "OriGrade" with any value
+STORE "FinGrade" without any value
+
+IF "OriGrade" greater than 70 THAN
+    IF "OriGrade" MOD 5 = 2 THAN
+       CALLCULATE "score" add 3
+       SET "FinGrade"  with calculation result
+       DISPLAY "FinGrade"
+
+    IF ELSE "OriGrade" MOD 5 = 1 THAN
+       CALLCULATE "score" add 4
+       SET "FinGrade"  with calculation result
+       DISPLAY "FinGrade"
+
+     ELSE 
+       DISPLAY "OriGrade"
+
+     END IF
+ELSE 
+     DISPLAY "OriGrade"
+
+END IF
+
+END
+
+   
