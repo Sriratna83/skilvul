@@ -1,5 +1,5 @@
 1. membuat sebuah folder kosong dengan namamu sendiri <b>mkdir Sri-Ratna-Ningsih</b>
-2. membuat sebuah file dengan nama `README.md`, isi file tersebut dengan kalimat<br>`"Halo perkenalkan aku halaman utama"`. <b>cd Sri-Ratna-Ningsih</b,><b>touch README.md<b>, <b>echo Halo perkenalkan aku halaman utama >> README.md</b>
+2. membuat sebuah file dengan nama `README.md`, isi file tersebut dengan kalimat<br>`"Halo perkenalkan aku halaman utama"`. <b>cd Sri-Ratna-Ningsih</b>, <b>touch README.md<b>, <b>echo Halo perkenalkan aku halaman utama >> README.md</b>
 3. insialisasi folder tersebut dengan Git, kemudian dokumentasikan menggunakan `commit` dengan pesan<br>`"Inisialisasi Git Repository"` <b>git init</b>, <b>git add .</b>, <b>git commit -m "Inisialisasi Git Repository"</b>
 4. buat `branch` baru dengan nama `cv`, hal ini berguna agar histori kita tidak tercampur <b>git branch cv</b>
 5. pindah `branch` kedalam `cv`, kemudian buat file dengan nama `cv.txt` dan isi file tersebut dengan kalimat:<br>`"Ini adalah file CV"`. <b>git checkout cv</b>, <b>touch cv.txt</b>, <b>echo Ini adalah file CV >> cv.txt</b>
