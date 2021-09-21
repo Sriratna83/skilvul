@@ -13,6 +13,7 @@ Pesan yang ingin disampaikan: Semangat untuk kamu yang disana sedang berjuang
 ![cat](https://user-images.githubusercontent.com/90690012/134177544-c45bde99-0d8c-47e2-b54d-3f7842cfdeba.PNG)
 <br>
 <br>
+
 7. Masukkan file `.md` tersebut ke dalam staging area **git add sriratnaningsih.md**
 8. Commit dengan memberikan pesan nama file `.md` kamu ** git commit -m "sriratnaningsih.md"
 9. Merge branch yang telah kamu buat ke dalam branch `master` **git checkout master**, **git merge sri-ratna-ningsih**
