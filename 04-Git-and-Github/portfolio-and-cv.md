@@ -4,7 +4,7 @@
 4. buat `branch` baru dengan nama `cv`, hal ini berguna agar histori kita tidak tercampur <b>git branch cv</b>
 5. pindah `branch` kedalam `cv`, kemudian buat file dengan nama `cv.txt` dan isi file tersebut dengan kalimat:<br>`"Ini adalah file CV"`. <b>git checkout cv</b>, <b>touch cv.txt</b>, <b>echo Ini adalah file CV >> cv.txt</b>
 6. kemudian dokumentasikan menggunakan `commit` dengan pesan<br>`"Inisialisasi CV"`. <b>git add .</b>, <b>git commit -m "Inisialisasi CV"</b>
-7. tambahkan 3 perusahaan yang akan kamu lamar, dan setiap menuliskan 1 nama perusahaan kamu harus melakukan dokumentasi menggunakan `commit` <b>echo Google >> cv.txt</b>, <b>git commit -m "Google"</b>, <b>echo YouTube >> cv.txt</b>, <b>git commit -m "YouTube"</b>, <b>echo Tokopedia >> cv.txt</b>, <b>git commit -m "Tokopedia"</b>
+7. tambahkan 3 perusahaan yang akan kamu lamar, dan setiap menuliskan 1 nama perusahaan kamu harus melakukan dokumentasi menggunakan `commit` <b>echo Google >> cv.txt</b>, <b>git add .</b>, <b>git commit -m "menambah perusahan kesatu"</b>, <b>echo YouTube >> cv.txt</b>, <b>git add .</b>, <b>git commit -m "menambah perusahan pertama"</b>, <b>echo Tokopedia >> cv.txt</b>, <b>git add .</b>, <b>git commit -m "menambah perusahan ketiga"</b>
 8. kembali ke `branch master`. <b>git checkout cv</b>
 9. ubah file `README.md` menjadi
     ```
