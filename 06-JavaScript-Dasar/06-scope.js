@@ -33,7 +33,7 @@ say();
 
 /// WRITE YOUR ANALYSIS HERE
 ///- console.log akan menampilkan Mariah
-///- Karena terdapat parameter pada funfiction printFirstName yang dimana funfiction akan berjalan. 
+///- Karena terdapat parameter pada funfiction printFirstName yang dimana funfiction yang akan berjalan. 
 
 const name = "John Watson";
 
