@@ -34,6 +34,7 @@ else{
 const temperature = 100; /// suhu
 const unit = "F"; /// inputan
 switch (unit) {
+    /// EDIT HERE
     case "K" :
         console.log(temperature + 273);
         break;
@@ -46,6 +47,4 @@ switch (unit) {
     default :
     console.log("Maaf anda salah input");
 
-   
-  /// EDIT HERE
 }

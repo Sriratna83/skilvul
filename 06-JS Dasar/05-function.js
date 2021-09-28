@@ -15,21 +15,21 @@
 
 /// EDIT HERE
 function taxCalc(salary) {
-    if(salary < 5_000_000){
-        console.log((0/100) * salary);
+    if (20_000_000 <= salary) {
+        return 0.2 * salary;
     }
-    else if (5_000_000 <= salary <  10_000_000) {
-        console.log(5/100 * salary);
+    else if (10_000_000 <= salary ) {
+        return 0.1 * salary;
+    }
+    else if (5_000_000 <= salary ) {
+        return 0.05 * salary ;
     } 
-    else if (10_000_000 <= salary <  20_000_000) {
-        console.log(10/100 * salary);
-    }
-    else if (20_000_000 <= salary) {
-        console.log((20/100) * salary);
+    else {
+        return 0;
     }
  }
- return salary;
-taxCalc(12_000_000);
+ console.log(taxCalc(4_500_000));
+ 
 
 
 // /// Soal - 02
@@ -51,35 +51,84 @@ taxCalc(12_000_000);
 // ///   (weight/(height^2)) * 10000
 
 // /// EDIT HERE
-// function checkBMI(....) { .... }
+function checkBMI(weight, height) { 
+    let $BMI = (weight / (height ** 2)) * 10000;
+
+    if(35 < $BMI ){
+        return "extremely obese";
+    }else if(30 < $BMI){
+        return "obese";
+    }else if(25 < $BMI){
+        return "over weight";
+    }else if(18.5 < $BMI){
+        return "normal";
+    }else{
+        return "under weight";
+    }
+    }
+console.log(checkBMI(80,170))
 
 
-// /// Soal - 03
-// /// Buatlah sebuah fungsi yang akan merubah huruf pertama disetiap kata menjadi huruf besar
+// // /// Soal - 03
+// // /// Buatlah sebuah fungsi yang akan merubah huruf pertama disetiap kata menjadi huruf besar
 
-// /// Parameter
-// /// - (String) sentence => kalimat yang nanti akan diubah
+// // /// Parameter
+// // /// - (String) sentence => kalimat yang nanti akan diubah
 
-// /// Return Value
-// /// - (String) kalimat yang sudah kita ubah huruf pertamanya menjadi huruf besar
+// // /// Return Value
+// // /// - (String) kalimat yang sudah kita ubah huruf pertamanya menjadi huruf besar
 
-// /// EDIT HERE
-// function convToUpperCase(....) { .... }
+// // /// EDIT HERE
+function convToUpperCase(sentence) {
+    let word = sentence.toLowerCase().split(' ');
+    for ( let i = 0; i < word.length; i++){
+        word[i] = word[i].charAt(0).toUpperCase()+ word[i].substring(1);
+    }
+    return word.join(' ')
+ }
+ console.log(convToUpperCase("Hello bandung"))
 
 
-// /// Soal - 04
-// /// Buatlah sebuah fungsi yang mana nanti akan mengembalikan HURUF PERTAMA YANG TIDAK KEMBAR
+// // /// Soal - 04
+// // /// Buatlah sebuah fungsi yang mana nanti akan mengembalikan HURUF PERTAMA YANG TIDAK KEMBAR
 
-// /// Spesifikasi
-// /// - apabila inputan berupa kata yang dipisah, maka kembalikan "kata tidak boleh dipisah"
-// /// - apabila inputan tidak memiliki karakter yang tidak kembar, maka kembalikan string kosong ""
-// /// - apabila ditemukan lebih dari 0 karakter yang tidak sama, maka kembalikan karakter pertama yang tidak sama
+// // /// Spesifikasi
+// // /// - apabila inputan berupa kata yang dipisah, maka kembalikan "kata tidak boleh dipisah"
+// // /// - apabila inputan tidak memiliki karakter yang tidak kembar, maka kembalikan string kosong ""
+// // /// - apabila ditemukan lebih dari 0 karakter yang tidak sama, maka kembalikan karakter pertama yang tidak sama
 
-// /// Parameter
-// /// - (String) word => kata yang nanti akan kita gunakan untuk mencari huruf yang tidak kembar (KATA TIDAK BOLEH DIPISAH)
+// // /// Parameter
+// // /// - (String) word => kata yang nanti akan kita gunakan untuk mencari huruf yang tidak kembar (KATA TIDAK BOLEH DIPISAH)
 
-// /// Result Value
-// /// (String) huruf yang pertama kali tidak ada kembarannya
+// // /// Result Value
+// // /// (String) huruf yang pertama kali tidak ada kembarannya
 
-// /// EDIT HERE
-// function firstNonRepeatedChar(....) { .... }
+// // /// EDIT HERE
+function firstNonRepeatedChar(word) { 
+    let kata = word.split(" ")
+        if (kata.length > 1) {
+            return "kata tidak boleh dipisah";
+        }
+        else{
+            for(let i = 0; i < word.length; i++){
+                let l = word[i]
+                let c = false;
+                for(let j = 0; j <word.length; j++){
+                    if(l == word[j] && j != i){
+                        c = true;
+                        break;
+                    }
+                }
+                if(c == false){
+                    return l;
+                    break;
+                }
+            }
+            return ""
+        }
+    }
+    
+ console.log(firstNonRepeatedChar("Hello world"));
+ console.log(firstNonRepeatedChar("alloha"));
+ console.log(firstNonRepeatedChar("wooohwh"));
+
